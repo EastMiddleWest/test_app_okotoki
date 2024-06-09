@@ -1,0 +1,44 @@
+@import '../../../colors.css';
+
+.tab-container{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+}
+
+.tab-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  flex-basis: 50%;
+  padding: 0.5em 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: var(--color-gray);
+}
+
+.tab-item:has(:nth-child(3)){
+  justify-content: flex-start;
+}
+
+.tab-item:hover{
+  background-color: var(--color-dark-gray);
+  cursor: pointer;
+}
+
+.tab-item input[type="radio"]{
+  display: none;
+}
+
+.tab-container .tab-item:has(input[type="radio"]:checked) {
+  color: #fff;
+  font-weight: 500;
+  cursor: auto;
+}
+
+/* .tab-container .tab-item:has(input[type="radio"]:not(:checked)):hover {
+  background-color: var(--color-dark-gray);
+  cursor: pointer;
+} */

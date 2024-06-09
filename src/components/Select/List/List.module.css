@@ -1,0 +1,32 @@
+@import '../../../colors.css';
+
+.list{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.item{
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.item span {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.selected{
+  background-color: var(--color-dark-gray);
+}

@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+main{
+  min-width: 100%;
+  min-height: 300px;
+}
+
+.control{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 2em 0;
+}
+
+.control button{
+  margin-left: 1em;
+  text-transform: capitalize;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.align-left{
+  justify-content: flex-start;
+}
+
+.align-center{
+  justify-content: center;
+}
+
+.align-right{
+  justify-content: flex-end;
+}
