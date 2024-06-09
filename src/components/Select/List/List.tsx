@@ -94,6 +94,10 @@ const List = ({
 
   },[options, handleSelectValue, selectedOptionIndex, firstVisibleIndex, lastVisibleIndex, totalHeight, handleClose])
 
+  if(options.length === 0){
+    return <span className={styles.empty}>No options</span>
+  }
+
 
   return (
     <div
